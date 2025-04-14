@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Ordinariness Demo';
+    src: url('OrdinarinessDemoRegular.woff2') format('woff2'),
+        url('OrdinarinessDemoRegular.woff') format('woff'),
+        url('OrdinarinessDemoRegular.svg#OrdinarinessDemoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
