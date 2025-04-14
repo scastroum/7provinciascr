@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Rudelsberg';
+    src: url('Rudelsberg.woff2') format('woff2'),
+        url('Rudelsberg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rudelsberg Alternate';
+    src: url('RudelsbergAlternate.woff2') format('woff2'),
+        url('RudelsbergAlternate.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rudelsberg-Titel';
+    src: url('Rudelsberg-Titel.woff2') format('woff2'),
+        url('Rudelsberg-Titel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
