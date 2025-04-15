@@ -50,6 +50,43 @@ header p {
   margin: 0 auto;
 }
 
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap; /* Optional if screen is small */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 50px; /* Adjust size as needed */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--button-hover);
+}
+
+
 /* Three horizontal options */
 .section {
   display: flex;
@@ -87,6 +124,17 @@ header p {
   font-family: 'OrdinarinessDemoRegular', sans-serif;
   font-size: 1rem;
   color: #666;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* allow wrapping */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
 /* CTA Section */
