@@ -1,0 +1,31 @@
+@import url('./fonts.css');
+
+/* Fondo degradado + imagen */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: 
+    linear-gradient(rgba(255, 228, 225, 0.7), rgba(255, 250, 205, 0.7)), 
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* 🌊 océano */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Roca Two', sans-serif;
+  background-color: #fde7eb; /* rosa Palmolive Naturals */
+  background-image: url('./images/oceano-o-atardecer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Calistoga', serif;
+}
+
+h3, h4 {
+  font-family: 'Roca Two', sans-serif;
+  font-weight: bold;
+}

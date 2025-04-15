@@ -1,31 +1,133 @@
 @import url('./fonts.css');
 
-/* Fondo degradado + imagen */
-body {
+:root {
+  --main-bg: #fde7eb;
+  --accent: #ffdaac;
+  --text-color: #333;
+  --button-bg: #ffb347;
+  --button-hover: #ff9a76;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   min-height: 100vh;
-  background-image: 
-    linear-gradient(rgba(255, 228, 225, 0.7), rgba(255, 250, 205, 0.7)), 
-    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* 🌊 océano */
+  font-family: 'RocaOne-Rg', sans-serif;
+  color: var(--text-color);
+  background-image:
+    linear-gradient(rgba(255, 228, 225, 0.7), rgba(255, 250, 205, 0.7)),
+    url('./images/oceano-o-atardecer.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: 'Roca Two', sans-serif;
-  background-color: #fde7eb; /* rosa Palmolive Naturals */
-  background-image: url('./images/oceano-o-atardecer.jpg');
-  background-size: cover;
-  background-position: center;
   background-blend-mode: soft-light;
-  color: #333;
+  padding-bottom: 4rem;
 }
 
-h1, h2 {
+/* Header section */
+header {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+}
+
+header h1 {
   font-family: 'Calistoga', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-h3, h4 {
-  font-family: 'Roca Two', sans-serif;
+header p {
+  font-family: 'Rudelsberg', serif;
+  font-size: 1.25rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Three horizontal options */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  max-width: 320px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-family: 'RocaOne-BlIt', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-family: 'OrdinarinessDemoRegular', sans-serif;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* CTA Section */
+.cta {
+  background-color: var(--button-bg);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-top: 2px solid var(--accent);
+}
+
+.cta h2 {
+  font-family: 'Calistoga', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  font-family: 'RocaOne-It', serif;
+  margin-bottom: 2rem;
+}
+
+.cta a.button {
+  display: inline-block;
+  background-color: var(--button-hover);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-family: 'Alixa', sans-serif;
+}
+
+.cta a.button:hover {
+  background-color: #ff7f50;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-family: 'RocaOne-LtIt', sans-serif;
+  font-size: 0.9rem;
+  color: #888;
 }
