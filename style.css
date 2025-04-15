@@ -53,18 +53,21 @@ header p {
 /* Three horizontal options */
 .section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center; /* Optional: Centers cards vertically */
   gap: 2rem;
   padding: 4rem 2rem;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  max-width: 100%; /* Ensures the container is wide enough */
+  overflow-x: auto; /* Adds horizontal scrolling if needed */
 }
 
 .card {
   background-color: var(--white);
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  flex: 1 1 300px;
-  max-width: 320px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  flex: 0 0 300px; /* Fixed width for each card */
+  max-width: 300px; /* Prevents cards from growing */
   padding: 2rem;
   text-align: center;
   transition: transform 0.3s ease;
@@ -124,10 +127,24 @@ header p {
 }
 
 /* Footer */
+/*Original footer
+
 footer {
   padding: 2rem;
   text-align: center;
   font-family: 'RocaOne-LtIt', sans-serif;
   font-size: 0.9rem;
   color: #888;
+}*/
+
+footer {
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 2rem;
+  text-align: center;
+  font-family: 'RocaOne-LtIt', sans-serif;
+  font-size: 0.9rem;
+  color: #888;
+  height: 100px; /* Set a height for the footer */
 }
