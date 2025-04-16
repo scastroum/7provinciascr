@@ -1,0 +1,29 @@
+@import url('./fonts.css');
+
+/* omitted because unnecessary:
+    :root {
+  --main-bg: #fde7eb;
+  --accent: #ffdaac;
+  --text-color: #333;
+  --button-bg: #ffb347;
+  --button-hover: #ff9a76;
+  --white: #fff;
+} */
+
+/* omitted because too complex:
+body {
+    min-height: 100vh;
+    font-family: 'RocaOne-Rg', sans-serif;
+    color: var(--text-color);
+    background-image: 
+      linear-gradient(rgba(255, 117, 138, 0.946), rgb(255, 241, 119)), 
+      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* 🌊 océano */
+    /*  background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    padding-bottom: 4rem;
+  } */
+   
+  
